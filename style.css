@@ -1,3 +1,15 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "aside header"
+    "aside main"
+    "aside footer";
+}
+
 p {
     color: red;
+}
+
+aside {
+    background-image: url("/Assets/images/hans-loebermann-VKnY6ugV8Ro-unsplash.jpg");
 }
