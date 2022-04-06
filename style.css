@@ -1,4 +1,4 @@
-body {
+.container {
     display: grid;
     grid-template-areas: 
     "aside header"
@@ -6,10 +6,22 @@ body {
     "aside footer";
 }
 
-p {
-    color: red;
+aside {
+    grid-area: aside;
+    background-image: url("/Assets/images/hans-loebermann-VKnY6ugV8Ro-unsplash.jpg");
+    background-size: cover;
+    display: flexbox;
 }
 
-aside {
-    background-image: url("/Assets/images/hans-loebermann-VKnY6ugV8Ro-unsplash.jpg");
+aside h1 {
+    align-self: center;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: Norse-bold;
+}
+
+aside caption {
+    align-self: end;
+    text-align: center;
 }
