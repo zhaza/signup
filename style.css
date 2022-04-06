@@ -1,5 +1,6 @@
 .container {
     display: grid;
+    grid-auto-columns: 1fr 2fr;
     grid-template-areas: 
     "aside header"
     "aside main"
@@ -10,7 +11,9 @@ aside {
     grid-area: aside;
     background-image: url("/Assets/images/hans-loebermann-VKnY6ugV8Ro-unsplash.jpg");
     background-size: cover;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+    width:
 }
 
 aside h1 {
@@ -18,10 +21,26 @@ aside h1 {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    font-family: Norse-bold;
+    font-family: Norse;
 }
 
 aside caption {
-    align-self: end;
+    grid-area: aside-end
+    justify-self: end;
     text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+form div, form input {
+    display: block;
+}
+
+form input {
+    border: 1px solid black
+    border-radius: 50%;
 }
