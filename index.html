@@ -9,13 +9,13 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="flex">
             <h2>This is not a real online service! You know you need something like this in your life ot help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
             <h2>You <em>know</em> you want to.</h2>
         </header>
         <main>
-            <h1>Let's Do This!</h1>
-            <form action="" method="get" class="main-form">
+            <h1 class="bold">Let's Do This!</h1>
+            <form action="" method="get" class="main-form grid bold">
                 <div class="main-form">
                   <label for="name">First Name</label>
                   <input type="text" name="fname" id="fname" required>
@@ -40,20 +40,22 @@
                     <label for="confirm-password">Confirm Password</label>
                     <input type="password" name="confirm-password" id="confirm-password" class="error" required>
                 </div>
+                <div>
+                    <button class="main-form bold">Create Account</button>
+                </div>
               </form>
         </main>
-        <aside>
-            <div class="logo-display">
+        <aside class="grid">
+            <div class="logo-display flex">
                 <figure>
                     <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="The Odin Project Logo">
                 </figure>
                 <h1>ODIN</h1>
             </div>
-            <figcaption>Photos by <a href="">Hans Leoberman</a> on <a href="unsplash.com">Unsplash</a></figcaption>
+            <figcaption class="flex">Photos by <a href="" class="bold">Hans Leoberman</a> on <a href="unsplash.com" class="bold">Unsplash</a></figcaption>
         </aside>
         <footer>
-            <button class="main-form">Create Account</button>
-            <h2>Already have an account? <a href="">Log In</a></h2>
+            <h2>Already have an account? <a href="" class="bold">Log In</a></h2>
         </footer>
     </div>
 </body>
